@@ -7,23 +7,23 @@
 
 Balance Beam is a website and mobile app designed to guide users toward a healthier lifestyle by personalizing their physical and mental well-being journey. It offers tailored food recommendations, curated training programs, and interactive fitness tracking, with 3D models to visualize muscle activity. The app also features an AI-powered therapist for emotional support and the ability to book online consultations with nutritionists, fitness coaches, or therapists, providing personalized care. Balance Beam aims to harmonize physical and mental wellness, making it accessible and engaging for all.
 ### User Stories
-User
+#### User
 - As a user, I want to input my dietary preferences and health data, so that I can check whether specific ingredients are healthy for me based on the information I provided.
 - As a fitness enthusiast, I want to view a 3D model of my body after a workout, so that I can see which muscles I targeted and how intensely they were engaged.
 
 - As a user seeking professional advice, I want to schedule an online meeting with a nutritionist, coach, or therapist, so that I can receive personalized guidance to improve my health and well-being.
 
-Nutritionist
+#### Nutritionist
 - As a nutritionist, I want to analyze a user's dietary habits and provide personalized meal plans, so that I can guide them towards healthier food choices that complement their fitness goals.
 - As a nutritionist, I want to track my clients' progress and adjust their meal plans based on their feedback and results, so that I can ensure they continue to make progress toward their goals.
 - As a nutritionist, I want to schedule and conduct online consultations with users, so that I can provide real-time advice and answer their questions related to their diet and nutrition.
 
-Coach
+#### Coach
 - As a coach, I want to create workouts for each muscle for my clients, so that I can help them achieve their fitness goals.
 - As a coach, I want to communicate directly with my clients through video calls, so that I can offer guidance, motivation, and real-time feedback.
-- As a coach, I want to track my client's progress through interactive tools and 3D muscle visualizations, so that I can provide targeted advice and adjust their workout plans as needed.
+- As a coach, I want the users to be able to see how much they targeted each muscle through a 3D model which will give them some guidance outside the online sessions
 
-Therpist
+#### Therapist
 - As a therapist, I want to provide emotional support through an AI-powered system, so that users can receive guidance and therapy whenever they need it, even outside of scheduled sessions.
 - As a therapist, I want to schedule and conduct video sessions with users, so that I can provide personalized therapy sessions and help them address their mental health concerns.
 - As a therapist, I want to monitor the mental health status of my clients through feedback and session notes, so that I can offer tailored support and advice during our consultations.
