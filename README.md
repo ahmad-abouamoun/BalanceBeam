@@ -59,10 +59,11 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 
 ### Mockups
-| Home screen  | Menu Screen | Order Screen |
+| Home screen  | Mental Health Screen | |
 | ---| ---| ---|
-| ![Landing](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) |
-
+| ![Home screen](./readme/Website/HomePage.gif) | ![mentalHealth screen](./readme/Website/mentalHealth.gif) |
+ Lobby Screen |
+ ![mentalHealth screen](./readme/Website/Lobby.png)
 <br><br>
 
 <!-- Database Design -->
