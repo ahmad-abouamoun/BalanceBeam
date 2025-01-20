@@ -28,7 +28,7 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 - As a therapist, I want to schedule and conduct video sessions with users, so that I can provide personalized therapy sessions and help them address their mental health concerns.
 - As a therapist, I want to monitor the mental health status of my clients through feedback and session notes, so that I can offer tailored support and advice during our consultations.
 
-Admin 
+#### Admin 
 - As an admin, I want to manage user access levels (e.g., blocking or suspending users), so that I can ensure the security of the platform and address any behavior violations.
 - As an admin, I want to be able to create accounts for therapists, nutritionists, and coaches and delete them whenever one is terminated.
 - As an admin, I want to see how many users do we many users do we currently have in our website
@@ -38,11 +38,15 @@ Admin
 
 ###  BalanceBeam is built using the following technologies:
 
-- This project uses the [React and React Native development frameworks](https://react.dev/). React is a powerful library for building user interfaces on the web, while React Native extends its capabilities to mobile app development. Together, they allow us to use a single codebase for apps across web and mobile platforms.
+- This project uses the [React framework](https://react.dev/) framework. React is a powerful library for building user interfaces on the web. It enables us to create dynamic, responsive, and efficient web applications using a component-based approach.
+
+- This project uses the [Three.js library](https://threejs.org/), a powerful JavaScript framework for creating 3D graphics on the web. Three.js simplifies the process of rendering 3D scenes, models, and animations by providing an extensive API and tools that run directly in the browser. With Three.js, you can build immersive experiences like interactive 3D applications, virtual reality environments, and much more, all without requiring specialized software.
 
 - For persistent storage (database), the app uses the [MongoDB](https://www.mongodb.com/) package which allows the app to create a custom storage schema and save it to a local database.
 
-- The app uses the font ["Work Sans"](https://fonts.google.com/specimen/Work+Sans) as its main font, and the design of the app adheres to the material design guidelines.
+- This project uses [Node.js](https://nodejs.org/en) and [Express.js](https://expressjs.com/) for backend development. Node.js is a powerful runtime environment that allows us to execute JavaScript on the server side, providing scalability and high performance. Express.js is a lightweight and flexible web application framework built on Node.js, enabling us to create robust APIs and handle server-side logic efficiently. Together, they form the foundation for building a fast and scalable backend.
+
+
 
 <br><br>
 <!-- UI UX -->
@@ -66,9 +70,11 @@ Admin
 
 ###  Architecting Data Excellence: Innovative Database Design Strategies:
 
-- Insert ER Diagram here
-
-
+| food Schema | meeting Schema | program Schema |
+| ---| ---| ---|
+| ![food Schema](./readme/Db-Snapshots/foodSchema.png) |  ![meeting Schema](./readme/Db-Snapshots/meetingSchema.png)  | ![program Schema](./readme/Db-Snapshots/programSchema.png) |
+| user Schema |
+| ![user Schema](./readme/Db-Snapshots/userSchema.png) | 
 <br><br>
 
 
@@ -76,19 +82,23 @@ Admin
 <img src="./readme/title6.svg"/>
 
 
-### User Screens (Mobile)
-| Login screen  | Register screen | Landing screen | Loading screen |
-| ---| ---| ---| ---|
-| ![Landing](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) |
-| Home screen  | Menu Screen | Order Screen | Checkout Screen |
-| ![Landing](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) |
+### User Screens (Web)
+| Login screen  | Register screen |   |
+| ---| ---| ---|
+| ![Login screen](./readme/Website/Login.gif)| ![SignUp screen](./readme/Website/Signup.gif) | 
+| Home screen  | Diet Screen | 
+| ![Home screen](./readme/Website/HomePage.gif) | ![Diet screen](./readme/Website/DietPage.gif)  | 
+| Training screen  | 3Dmodel feature | 
+| ![Training screen](./readme/Website/TrainingPage.gif) | ![mentalHealth screen](./readme/Website/3Dmodel.gif)  |
+|  Mental Health Screen | 
+ | ![mentalHealth screen](./readme/Website/mentalHealth.gif)  |
+
 
 ### Admin Screens (Web)
-| Login screen  | Register screen |  Landing screen |
+| Login screen  | Admin screen | |
 | ---| ---| ---|
-| ![Landing](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) |
-| Home screen  | Menu Screen | Order Screen |
-| ![Landing](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) |
+| ![Login screen](./readme/Website/AdminLogin.gif) | ![Login screen](./readme/Website/AdminPage.gif) | 
+
 
 <br><br>
 
@@ -127,27 +137,122 @@ Admin
 
 ### Prerequisites
 
-
+1.  Ensure that Node.js and npm are installed on your system. If not, you can download them from Node.js.
+    Install the latest npm version: 
   ```sh
 * npm
   npm install npm@latest -g
 
   ```
-  
+2.  Ensure that you login inside Atlas and create a new project and after naming the project, create a new cluster then setup your connection inside the backend.
+
+3.  Ensure Git is installed for cloning the repository. Install it from [Git's official site](https://git-scm.com/) if not already installed.
+
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [example](https://example.com)
-2. Clone the repo
+### BalanceBeam-backend
+
+
+1. Clone the repo
    git clone [github](https://github.com/ahmad-abouamoun/BalanceBeam)
+
+2. At your terminal change the directory to your backend
+   ```sh
+   cd Server
+   ```
 3. Install NPM packages
    ```sh
    npm install
+   npm install express
+   npm install axios
+   npm install cors
+   npm install dotenv
+   npm install mongoose
+   npm install multer
+   npm install bcrypt
+   npm install bcryptjs
+   npm install jsonwebtoken
+   npm install socket.io
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Configure Environment Variables Create a .env file in the root directory and provide the necessary values as follows:
+   ``` sh
+   secretKey="Generate a JWT secret"
+   OPENAI_API_KEY=API_KEY
+   ```
+5. After completing the Setup go to your terminal and type this inside the terminal hence be sure you are inside the Server folder:
+
+   ``` sh
+   nodemon src/index.js
    ```
 
+   if the message appeared like this inside your terminal then the backend connection is correct:
+
+   ```   sh
+   Connected to db
+   ```
+### BalanceBeam-frontend
+
+1. Clone the repo git clone [github](https://github.com/ahmad-abouamoun/BalanceBeam) if you have already cloned skip this step.
+2. At your terminal change the directory to your frontend
+   ```sh
+   cd Client
+   ```
+3. Install NPM packages
+
+   ```sh
+   npm install
+   npm install react react-dom
+   npm install react-scripts
+   npm install @reduxjs/toolkit
+   npm install react-redux
+   npm install @chakra-ui/react
+   npm install @emotion/react @emotion/styled
+   npm install @mui/icons-material
+   npm install styled-components
+   npm install date-fns
+   npm install crypto-js
+   npm install react-data-table-component
+   npm install react-data-table
+   npm install react-big-calendar
+   npm install react-player
+   npm install socket.io socket.io-client
+   npm install three
+   ```
+5. After completing the Setup go to your terminal and type this inside the terminal hence be sure you are inside the Client folder:
+
+   ```sh
+   npm start
+   ```
+   if the message appeared like this inside your terminal then the fronend connection is correct:
+   ```sh
+   > client@0.1.0 start
+   > react-scripts start
+
+   Compiled successfully!
+
+   You can now view client in the browser.
+
+   Local:            http://localhost:3000
+   On Your Network:  http://192.168.56.1:3000
+
+   Note that the development build is not optimized.
+   To create a production build, use npm run build.
+
+   webpack compiled successfully
+
+   Note that the development build is not optimized.
+   To create a production build, use npm run build.
+
+   Compiled successfully!
+
+   You can now view client in the browser.
+
+
+   Note that the development build is not optimized.
+   To create a production build, use npm run build.
+
+   webpack compiled successfully
+   ```
 Now, you should be able to run BalanceBeam locally and explore its features.
