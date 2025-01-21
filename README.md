@@ -38,7 +38,7 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 ###  BalanceBeam is built using the following technologies:
 
-- This project uses the [React framework](https://react.dev/) framework. React is a powerful library for building user interfaces on the web. It enables us to create dynamic, responsive, and efficient web applications using a component-based approach.
+- This project uses the [React framework](https://react.dev/) framework. React is a powerful library for building user interfaces on the web, and it uses [Redux](https://redux-toolkit.js.org/) for state management.
 
 - This project uses the [Three.js library](https://threejs.org/), a powerful JavaScript framework for creating 3D graphics on the web. Three.js simplifies the process of rendering 3D scenes, models, and animations by providing an extensive API and tools that run directly in the browser. With Three.js, you can build immersive experiences like interactive 3D applications, virtual reality environments, and much more, all without requiring specialized software.
 
@@ -46,6 +46,9 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 - This project uses [Node.js](https://nodejs.org/en) and [Express.js](https://expressjs.com/) for backend development. Node.js is a powerful runtime environment that allows us to execute JavaScript on the server side, providing scalability and high performance. Express.js is a lightweight and flexible web application framework built on Node.js, enabling us to create robust APIs and handle server-side logic efficiently. Together, they form the foundation for building a fast and scalable backend.
 
+- [JWT](https://jwt.io/introduction) is utilized for authentication and session management.
+
+- This project uses [socket.io](https://socket.io/) and [webrtc](https://webrtc.org/) to establish a connection for the online meeting and chatting
 
 
 <br><br>
