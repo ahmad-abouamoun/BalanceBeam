@@ -59,10 +59,9 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 
 ### Mockups
-| Home screen  | Lobby Screen | |
+| Hero section  | Lobby Screen | |
 | ---| ---| ---|
-| ![Home screen](./readme/Website/Home%20Page.png) |  ![LobbyPage screen](./readme/Website/LobbyPage.png)
- |
+| ![Hero section](./readme/Website/Herosection.png) |  ![LobbyPage screen](./readme/Website/LobbyPage.png)
  
 <br><br>
 
@@ -84,21 +83,18 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 
 ### User Screens (Web)
-| Login screen  | Register screen |   |
+| Online Meeting| Chats in Meeting |   |
 | ---| ---| ---|
-| ![Login screen](./readme/Website/Login.gif)| ![SignUp screen](./readme/Website/Signup.gif) | 
-| Home screen  | Diet Screen | 
-| ![Home screen](./readme/Website/HomePage.gif) | ![Diet screen](./readme/Website/DietPage.gif)  | 
-| Training screen  | 3Dmodel feature | 
-| ![Training screen](./readme/Website/TrainingPage.gif) | ![mentalHealth screen](./readme/Website/3Dmodel.gif)  |
-|  Mental Health Screen | 
- | ![mentalHealth screen](./readme/Website/mentalHealth.gif)  |
-
-
+| ![Online Meeting](./readme/Website/OnlineMeeting.gif)| ![Chats in Meeting](./readme/Website/Chats-inMeeting.gif) | 
+| Booking Meeting  | 3Dmodel feature | 
+|  ![BookingMeeting screen](./readme/Website/BookingMeeting.gif) | ![mentalHealth screen](./readme/Website/3Dmodel.gif)  |
+|  Mental Health Screen | Profile Screen|
+ | ![mentalHealth screen](./readme/Website/mentalHealth.gif)  | ![BookingMeeting screen](./readme/Website/ProfilePage.gif) 
+|
 ### Admin Screens (Web)
-| Login screen  | Admin screen | |
+|  Admin screen | Creating Expert | |
 | ---| ---| ---|
-| ![Login screen](./readme/Website/AdminLogin.gif) | ![Login screen](./readme/Website/AdminPage.gif) | 
+|![admin screen](./readme/Website/ManagingUsers.gif) |  ![admin screen](./readme/Website/CreatingExpert.gif) | 
 
 
 <br><br>
@@ -109,7 +105,10 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 ###  Mastering AI Interaction: Unveiling the Power of Prompt Engineering:
 
-- This project uses advanced prompt engineering techniques to optimize the interaction with natural language processing models. By skillfully crafting input instructions, we tailor the behavior of the models to achieve precise and efficient language understanding and generation for various tasks and preferences.
+- This project uses the gpt-3.5-turbo in 2 places the first for is in showing it as a therapist Ai that will help you and guide you emotionally and offer some advices to overcome your problem
+<img src="./readme/Website/TherapistPrompt.png">
+- The second way is by showcasing it as a coach that will tell you the intensity of your workout on each muscle and its analysis will be visualized on a 3D model
+<img src="./readme/Website/coachPrompt.png">
 
 <br><br>
 
@@ -120,6 +119,12 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 - This project leverages AWS deployment strategies to seamlessly integrate and deploy natural language processing models. With a focus on scalability, reliability, and performance, we ensure that AI applications powered by these models deliver robust and responsive solutions for diverse use cases.
 
+|  Create User API | Get Users API | |
+| ---| ---| ---|
+|![CreateUser](./readme/Website/CreateUser.jpg) |  ![admin screen](./readme/Website/GetUsers.jpg) | 
+|  Create Food API | Create Program API | |
+|![CreateUser](./readme/Website/CreateFood.jpg) |  ![admin screen](./readme/Website/CreateProgram.jpg) | 
+
 <br><br>
 
 <!-- Unit Testing -->
@@ -127,7 +132,9 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 ###  Precision in Development: Harnessing the Power of Unit Testing:
 
-- This project employs rigorous unit testing methodologies to ensure the reliability and accuracy of code components. By systematically evaluating individual units of the software, we guarantee a robust foundation, identifying and addressing potential issues early in the development process.
+- This project uses the unit testing on the backend using [jest](https://jestjs.io/) which help us detect any issues in the backend early on and fix them as soon as possible
+
+<img src="./readme/Website/unitTests.png">
 <br><br>
 
 
