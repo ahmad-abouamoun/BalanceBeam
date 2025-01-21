@@ -90,7 +90,7 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 |  ![BookingMeeting screen](./readme/Website/BookingMeeting.gif) | ![mentalHealth screen](./readme/Website/3Dmodel.gif)  |
 |  Mental Health Screen | Profile Screen|
  | ![mentalHealth screen](./readme/Website/mentalHealth.gif)  | ![BookingMeeting screen](./readme/Website/ProfilePage.gif) 
-|
+
 ### Admin Screens (Web)
 |  Admin screen | Creating Expert | |
 | ---| ---| ---|
