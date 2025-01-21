@@ -120,8 +120,32 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 ###  Efficient AI Deployment: Unleashing the Potential with AWS Integration:
 
-- This project leverages AWS deployment strategies to seamlessly integrate and deploy natural language processing models. With a focus on scalability, reliability, and performance, we ensure that AI applications powered by these models deliver robust and responsive solutions for diverse use cases.
-
+- This project's backend was deployed using an AWS instance which was by first connecting to the server using  the command (this command should be only excuted in the directory that contains your key)
+   ``` sh
+   ssh -i .\fsw3132.pem ubuntu@35.180.41.136 
+   ```
+- Then cloning the backend
+   ``` sh
+   git clone https://github.com/ahmad-abouamoun/Server
+   ```
+- After that I installed nvm to install latest Nodejs version
+   ```sh
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+   nvm install node
+   ```
+- And finally downloaded mongoDB using these commands
+   ```sh
+   wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo gpg --dearmor -o /usr/share/keyrings/mongodb-archive-keyring.gpg
+   echo "deb [signed-by=/usr/share/keyrings/mongodb-archive-keyring.gpg] https://repo.mongodb.org/apt/ubuntu $(lsb_release -sc)/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+   sudo apt update
+   sudo apt install -y mongodb-org
+   sudo systemctl start mongod
+   sudo systemctl enable mongod
+   ```
+- If you want to check if mongoDB is running use 
+   ```sh
+   sudo systemctl status mongod
+   ```
 |  Create User API | Get Users API | |
 | ---| ---| ---|
 |![CreateUser](./readme/Website/CreateUser.jpg) |  ![admin screen](./readme/Website/GetUsers.jpg) | 
