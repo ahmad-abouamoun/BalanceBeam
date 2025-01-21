@@ -71,7 +71,7 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 <!-- Database Design -->
 <img src="./readme/title5.svg"/>
 
-###  Architecting Data Excellence: Innovative Database Design Strategies:
+###  Schemas Used For Developing This Project :
 
 | food Schema | meeting Schema | program Schema |
 | ---| ---| ---|
@@ -86,13 +86,15 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 
 ### User Screens (Web)
-| Online Meeting| Chats in Meeting |   |
+
+|Mental Health Screen|3Dmodel feature |   |
 | ---| ---| ---|
-| ![Online Meeting](./readme/Website/OnlineMeeting.gif)| ![Chats in Meeting](./readme/Website/Chats-inMeeting.gif) | 
-| Booking Meeting  | 3Dmodel feature | 
-|  ![BookingMeeting screen](./readme/Website/BookingMeeting.gif) | ![mentalHealth screen](./readme/Website/3Dmodel.gif)  |
-|  Mental Health Screen | Profile Screen|
- | ![mentalHealth screen](./readme/Website/mentalHealth.gif)  | ![BookingMeeting screen](./readme/Website/ProfilePage.gif) 
+| ![Online Meeting](./readme/Website/mentalHealth.gif)| ![Chats in Meeting](./readme/Website/3Dmodel.gif) | 
+|  Online Meeting  |  Chats in Meeting  |
+ | ![mentalHealth screen](./readme/Website/OnlineMeeting.gif)  |  ![mentalHealth screen](./readme/Website/Chats-inMeeting.gif) 
+| Booking Meeting  |Profile Screen| 
+|  ![BookingMeeting screen](./readme/Website/BookingMeeting.gif) |![BookingMeeting screen](./readme/Website/ProfilePage.gif) |
+  
 
 ### Admin Screens (Web)
 |  Admin screen | Creating Expert | |
@@ -120,32 +122,8 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 ###  Efficient AI Deployment: Unleashing the Potential with AWS Integration:
 
-- This project's backend was deployed using an AWS instance which was by first connecting to the server using  the command (this command should be only excuted in the directory that contains your key)
-   ``` sh
-   ssh -i .\fsw3132.pem ubuntu@35.180.41.136 
-   ```
-- Then cloning the backend
-   ``` sh
-   git clone https://github.com/ahmad-abouamoun/Server
-   ```
-- After that I installed nvm to install latest Nodejs version
-   ```sh
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-   nvm install node
-   ```
-- And finally downloaded mongoDB using these commands
-   ```sh
-   wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo gpg --dearmor -o /usr/share/keyrings/mongodb-archive-keyring.gpg
-   echo "deb [signed-by=/usr/share/keyrings/mongodb-archive-keyring.gpg] https://repo.mongodb.org/apt/ubuntu $(lsb_release -sc)/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-   sudo apt update
-   sudo apt install -y mongodb-org
-   sudo systemctl start mongod
-   sudo systemctl enable mongod
-   ```
-- If you want to check if mongoDB is running use 
-   ```sh
-   sudo systemctl status mongod
-   ```
+- This project's backend was deployed using an AWS instance which was by first connecting to the server then cloning the [backend](https://github.com/ahmad-abouamoun/Server) part of the project into the the server and then cd Server after that install nvm so that you could install Nodejs latest version and make sure to download the mongoDB into the server
+
 |  Create User API | Get Users API | |
 | ---| ---| ---|
 |![CreateUser](./readme/Website/CreateUser.jpg) |  ![admin screen](./readme/Website/GetUsers.jpg) | 
@@ -200,16 +178,6 @@ _Below is an example of how you can instruct your audience on installing and set
 3. Install NPM packages
    ```sh
    npm install
-   npm install express
-   npm install axios
-   npm install cors
-   npm install dotenv
-   npm install mongoose
-   npm install multer
-   npm install bcrypt
-   npm install bcryptjs
-   npm install jsonwebtoken
-   npm install socket.io
    ```
 4. Configure Environment Variables Create a .env file in the root directory and provide the necessary values as follows:
    ``` sh
@@ -238,22 +206,6 @@ _Below is an example of how you can instruct your audience on installing and set
 
    ```sh
    npm install
-   npm install react react-dom
-   npm install react-scripts
-   npm install @reduxjs/toolkit
-   npm install react-redux
-   npm install @chakra-ui/react
-   npm install @emotion/react @emotion/styled
-   npm install @mui/icons-material
-   npm install styled-components
-   npm install date-fns
-   npm install crypto-js
-   npm install react-data-table-component
-   npm install react-data-table
-   npm install react-big-calendar
-   npm install react-player
-   npm install socket.io socket.io-client
-   npm install three
    ```
 5. After completing the Setup go to your terminal and type this inside the terminal hence be sure you are inside the Client folder:
 
