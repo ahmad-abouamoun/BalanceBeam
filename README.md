@@ -126,12 +126,15 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 
 |  Create User API | Get Users API | |
 | ---| ---| ---|
-|![CreateUser](./readme/Website/CreateUser.jpg) |  ![admin screen](./readme/Website/GetUsers.jpg) | 
+|![CreateUser](./readme/Website/CreateUser.gif) |  ![admin screen](./readme/Website/GetUsers.jpg) | 
 |  Create Food API | Create Program API | |
 |![CreateUser](./readme/Website/CreateFood.jpg) |  ![admin screen](./readme/Website/CreateProgram.jpg) | 
 
 <br><br>
 
+### CI/CD PipeLine Creation:
+- After the creating the unit tests in the backend and deploying the code on AWS the next step was creating the CI/CD so that the tests that i created will be tested whenever i push to the repo and then if all the tests were successful the code will be automatically deployed onto the AWS instance
+<img src="./readme/Website/CI-CD.png">
 <!-- Unit Testing -->
 <img src="./readme/title9.svg"/>
 
