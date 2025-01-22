@@ -108,7 +108,7 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 <!-- Prompt Engineering -->
 <img src="./readme/title7.svg"/>
 
-###  Mastering AI Interaction: Unveiling the Power of Prompt Engineering:
+###  Prompts Used in this Project:
 
 - This project uses the gpt-3.5-turbo in 2 places the first for is in showing it as a therapist Ai that will help you and guide you emotionally and offer some advices to overcome your problem
 <img src="./readme/Website/TherapistPrompt.png">
@@ -120,7 +120,7 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 <!-- AWS Deployment -->
 <img src="./readme/title8.svg"/>
 
-###  Efficient AI Deployment: Unleashing the Potential with AWS Integration:
+###  AWS Deployment Steps and Postman documentation:
 
 - This project's backend was deployed using an AWS instance which was by first connecting to the server then cloning the [backend](https://github.com/ahmad-abouamoun/Server) part of the project into the the server and then cd Server after that install nvm so that you could install Nodejs latest version and make sure to download the mongoDB into the server
 
@@ -135,7 +135,7 @@ Balance Beam is a website and mobile app designed to guide users toward a health
 <!-- Unit Testing -->
 <img src="./readme/title9.svg"/>
 
-###  Precision in Development: Harnessing the Power of Unit Testing:
+###  Hranessing the Power of Unit Testing:
 
 - This project uses the unit testing on the backend using [jest](https://jestjs.io/) which help us detect any issues in the backend early on and fix them as soon as possible
 
